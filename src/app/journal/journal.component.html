@@ -1,0 +1,28 @@
+<h1>INHABITENT JOURNAL</h1>
+
+<div class="container">
+
+<div class="owl-carousel owl-theme">
+  <div *ngFor = "let journal of journalEntries" [class.selected]="journal === selectedJournal" (click)="onSelect(journal)" [routerLink]="['/read', journal.ID]">
+<div class="spacing">
+
+ <div class= "border">
+       <img src={{journal.image}}>
+       <div>
+           <h3>{{journal.date}} / {{journal.categories.count}} comments</h3>
+           <h2>{{journal.title}}</h2>
+           <button (click)="gotoDetail()">READ ENTRY</button>
+       </div>
+   </div>
+ </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+  <button routerLink="/new-entry">SUBMIT A NEW POST</button>
+</div>
+
+<br /><br /><br />

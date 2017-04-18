@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+Angular2 project currently not working, must update to Angular 4.
+
+
 # Project3
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
